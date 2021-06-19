@@ -1,7 +1,6 @@
 # NLP(Natural Language Procesing) examples
 
-본 예제는 자연어처리의 기본 지식을 학습하는 예제로서   
-네이버 영화감성 분석 데이터셋(Naver Movie Review Sentiment Analysis)을 대상으로 
+본 예제는 자연어처리의 기본 지식을 학습하는 예제로서, 네이버 영화감성 분석 데이터셋(Naver Movie Review Sentiment Analysis)을 대상으로 
 자연어처리 중 분류(Classification)를 주제로 구성하였습니다.
 - 데이터셋 : [NSMC 데이터셋](https://github.com/e9t/nsmc/)
 - 소스 참고 
