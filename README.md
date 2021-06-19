@@ -7,7 +7,8 @@
 
 ### 예제 구성
 1. RNN 알고리즘을 이용한 분류 [01_lstm_train.py](https://github.com/rightlit/nlp/blob/main/examples/01_lstm_train.py)
-2. CNN 알고리즘을 이용한 분류 [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) image data. Extract them to `data/birds/`
+2. CNN 알고리즘을 이용한 분류 
+3. 사전훈련된 Word2Vec 을 이용한 분류
 
 **RNN 이용한 모델**
 - 모델 훈련 [01_lstm_train.py](https://github.com/rightlit/nlp/blob/main/examples/01_lstm_train.py).
