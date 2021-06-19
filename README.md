@@ -6,9 +6,9 @@
 예제는 아래와 같이 구성되어 있습니다.
 
 ### 예제 구성
-1. RNN 알고리즘을 이용한 분류 [01_lstm_train.py](https://github.com/rightlit/nlp/example/01_lstm_train.py)
+1. RNN 알고리즘을 이용한 분류 [01_lstm_train.py](https://github.com/rightlit/nlp/examples/01_lstm_train.py)
 2. CNN 알고리즘을 이용한 분류 [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) image data. Extract them to `data/birds/`
 
 **RNN 이용한 모델**
-- 모델 훈련 [01_lstm_train.py](https://github.com/rightlit/nlp/example/01_lstm_train.py).
-- 모델 평가 [01_lstm_eval.py](https://github.com/rightlit/nlp/example/01_lstm_eval.py)
+- 모델 훈련 [01_lstm_train.py](https://github.com/rightlit/nlp/examples/01_lstm_train.py).
+- 모델 평가 [01_lstm_eval.py](https://github.com/rightlit/nlp/examples/01_lstm_eval.py)
