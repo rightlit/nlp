@@ -2,7 +2,7 @@
 
 자연어처리 예제입니다.
 
-소스 참고 [네이버 영화 리뷰 감성 분류하기(Naver Movie Review Sentiment Analysis)](https://wikidocs.net/44249) for original source version, <br>
+소스 참고 : [네이버 영화 리뷰 감성 분류하기(Naver Movie Review Sentiment Analysis)](https://wikidocs.net/44249) <br>
 예제는 아래와 같이 구성되어 있습니다.
 
 ### 예제 구성
