@@ -12,7 +12,7 @@
 
 ### 예제 구성
 1. RNN 알고리즘을 이용한 분류 
-    - 모델 훈련 : [01_lstm_train.py](https://github.com/rightlit/nlp/blob/main/examples/01_lstm_train.py).
+    - 모델 훈련 : [01_lstm_train.py](https://github.com/rightlit/nlp/blob/main/examples/01_lstm_train.py)
     - 모델 평가 : [01_lstm_eval.py](https://github.com/rightlit/nlp/blob/main/examples/01_lstm_eval.py)
 2. CNN 알고리즘을 이용한 분류 
 3. 사전훈련된 Word2Vec 을 이용한 분류
