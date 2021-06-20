@@ -79,9 +79,6 @@ for sentence in test_data['document']:
     temp_X = [word for word in temp_X if not word in stopwords] # 불용어 제거
     X_test.append(temp_X)
 
-write2file(X_train, 'X_train.pkl')
-write2file(X_test, 'X_test.pkl')
-
 vocab_size = get_vocab_size()
 
 tokenizer = Tokenizer(vocab_size) 
@@ -92,9 +89,6 @@ X_test = tokenizer.texts_to_sequences(X_test)
 y_train = np.array(train_data['label'])
 y_test = np.array(test_data['label'])
 
-write2file(y_train, 'y_train.pkl')
-write2file(y_test, 'y_test.pkl')
-
 drop_train = [index for index, sentence in enumerate(X_train) if len(sentence) < 1]
 
 # 빈 샘플들을 제거
@@ -104,6 +98,12 @@ y_train = np.delete(y_train, drop_train, axis=0)
 max_len = 30
 X_train = pad_sequences(X_train, maxlen = max_len)
 X_test = pad_sequences(X_test, maxlen = max_len)
+
+# dump data to pickle
+write2file(X_train, 'X_train.pkl')
+write2file(X_test, 'X_test.pkl')
+write2file(y_train, 'y_train.pkl')
+write2file(y_test, 'y_test.pkl')
 
 model = Sequential()
 model.add(Embedding(vocab_size, 100))
