@@ -24,7 +24,7 @@
     - 모델 훈련 : [03_cnn_train.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_train.py)
     - 모델 평가 : [03_cnn_eval.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_eval.py)
 4. 사전훈련된 Word2Vec 을 이용한 분류
-    - 모델 훈련 : [04_cnn_word2vec_train.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_word2vec_train.py)
-    - 모델 평가 : [04_cnn_word2vec_eval.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_word2vec_eval.py)
+    - 모델 훈련 : [04_cnn_word2vec_train.py](https://github.com/rightlit/nlp/blob/main/examples/04_cnn_word2vec_train.py)
+    - 모델 평가 : [04_cnn_word2vec_eval.py](https://github.com/rightlit/nlp/blob/main/examples/04_cnn_word2vec_eval.py)
 
 
