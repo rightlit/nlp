@@ -8,17 +8,21 @@
 - 소스 참고 
     - 네이버 영화 리뷰 감성 분류하기(Naver Movie Review Sentiment Analysis) : [https://wikidocs.net/44249](https://wikidocs.net/44249) <br>
     - 1D CNN으로 IMDB 리뷰 분류하기 : [https://wikidocs.net/80783](https://wikidocs.net/80783) <br>
+    - [Chapter 4. 분류] XGBoost(eXtraGradient Boost) : [https://injo.tistory.com/44](https://injo.tistory.com/44) <br>
     - 사전 훈련된 워드 임베딩을 이용한 의도 분류(Intent Classification using Pre-trained Word Embedding) : [https://wikidocs.net/86083](https://wikidocs.net/86083) <br>
 
 예제는 아래와 같이 구성되어 있습니다.
 
 ### 예제 구성
 1. RNN 알고리즘을 이용한 분류 
-    - 모델 훈련 : [01_lstm_train.py](https://github.com/rightlit/nlp/blob/main/examples/01_lstm_train.py)
-    - 모델 평가 : [01_lstm_eval.py](https://github.com/rightlit/nlp/blob/main/examples/01_lstm_eval.py)
-2. CNN 알고리즘을 이용한 분류 
-    - 모델 훈련 : [02_cnn_train.py](https://github.com/rightlit/nlp/blob/main/examples/02_cnn_train.py)
-    - 모델 평가 : [02_cnn_eval.py](https://github.com/rightlit/nlp/blob/main/examples/02_cnn_eval.py)
-3. 사전훈련된 Word2Vec 을 이용한 분류
+    - 모델 훈련 : [01_xgboost_train.py](https://github.com/rightlit/nlp/blob/main/examples/01_xgboost_train.py)
+    - 모델 평가 : [01_xgboost_eval.py](https://github.com/rightlit/nlp/blob/main/examples/01_xgboost_eval.py)
+2. RNN 알고리즘을 이용한 분류 
+    - 모델 훈련 : [02_lstm_train.py](https://github.com/rightlit/nlp/blob/main/examples/02_lstm_train.py)
+    - 모델 평가 : [02_lstm_eval.py](https://github.com/rightlit/nlp/blob/main/examples/02_lstm_eval.py)
+3. CNN 알고리즘을 이용한 분류 
+    - 모델 훈련 : [03_cnn_train.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_train.py)
+    - 모델 평가 : [03_cnn_eval.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_eval.py)
+4. 사전훈련된 Word2Vec 을 이용한 분류
 
 
