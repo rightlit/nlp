@@ -31,7 +31,7 @@ X_test = load2var('X_test.pkl')
 y_train = load2var('y_train.pkl')
 y_test = load2var('y_test.pkl')
 
-xgb_model = load2var('best_xgboost_model.pkl')
+xgb_wrapper = load2var('best_xgboost_model.pkl')
 w_preds = xgb_wrapper.predict(X_test)
 # 예측 결과 확인
 get_clf_eval(y_test, w_preds)
