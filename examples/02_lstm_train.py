@@ -138,9 +138,11 @@ if(os.path.isfile(fname1) and os.path.isfile(fname2)):
     y_test = load2var('y_test.pkl')
     vocab_size = 19416
 else:
+    vocab_size = None
     # 데이터 사전처리
     preprocess()
     X_train, X_test, y_train, y_test = preprocess()
+    vocab_size = 19416
 
 model = Sequential()
 model.add(Embedding(vocab_size, 100))
