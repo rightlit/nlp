@@ -144,7 +144,6 @@ else:
     preprocess()
     X_train, X_test, y_train, y_test = preprocess()
 
-#vocab_size = 19416
 model = Sequential()
 model.add(Embedding(vocab_size, 256))
 model.add(Dropout(0.3))
