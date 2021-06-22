@@ -16,7 +16,7 @@ from tensorflow.keras.models import load_model
 import pickle
 import os
 
-def get_vocab_size():
+def get_vocab_size(X_train):
     tokenizer = Tokenizer()
     tokenizer.fit_on_texts(X_train)
     threshold = 3
@@ -73,7 +73,7 @@ def preprocess():
     X_train = []
     total_len = len(train_data['document'])
     cnt = 0
-    print('train_data : stopwords eliminating ==========')
+    print('train_data : document words tokenizing ==========')
     for sentence in train_data['document']:
         temp_X = okt.morphs(sentence, stem=True) # 토큰화
         temp_X = [word for word in temp_X if not word in stopwords] # 불용어 제거
@@ -85,7 +85,7 @@ def preprocess():
     X_test = []
     total_len = len(test_data['document'])
     cnt = 0
-    print('test_data : stopwords eliminating ==========')
+    print('test_data : document words tokenizing ==========')
     for sentence in test_data['document']:
         temp_X = okt.morphs(sentence, stem=True) # 토큰화
         temp_X = [word for word in temp_X if not word in stopwords] # 불용어 제거
@@ -94,7 +94,7 @@ def preprocess():
         if(cnt % 1000 == 0):
             print('(%d / %d) processing...' % (cnt, total_len))
     
-    vocab_size = get_vocab_size()
+    vocab_size = get_vocab_size(X_train)
     
     tokenizer = Tokenizer(vocab_size) 
     tokenizer.fit_on_texts(X_train)
@@ -120,6 +120,8 @@ def preprocess():
     write2file(y_train, 'y_train.pkl')
     write2file(y_test, 'y_test.pkl')
 
+    return X_train, X_test, y_train, y_test
+
 def load2var(filepath):
     with open(filepath, 'rb') as f:
         data = pickle.load(f)
@@ -139,6 +141,7 @@ if(os.path.isfile(fname1) and os.path.isfile(fname2)):
 else:
     # 데이터 사전처리
     preprocess()
+    X_train, X_test, y_train, y_test = preprocess()
 
 #vocab_size = 19416
 model = Sequential()
