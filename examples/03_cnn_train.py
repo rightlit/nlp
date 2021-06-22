@@ -127,6 +127,10 @@ def load2var(filepath):
         data = pickle.load(f)
         return data
 
+# NSMC dataset download
+urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_train.txt", filename="ratings_train.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_test.txt", filename="ratings_test.txt")   
+
 fname1 = 'X_train.pkl'
 fname2 = 'X_test.pkl'
 if(os.path.isfile(fname1) and os.path.isfile(fname2)):
