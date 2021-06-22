@@ -16,7 +16,7 @@ from xgboost import XGBClassifier
 import pickle
 import os
 
-def get_vocab_size():
+def get_vocab_size(X_train):
     tokenizer = Tokenizer()
     tokenizer.fit_on_texts(X_train)
     threshold = 3
@@ -94,7 +94,7 @@ def preprocess():
         if(cnt % 1000 == 0):
             print('(%d / %d) processing...' % (cnt, total_len))
     
-    vocab_size = get_vocab_size()
+    vocab_size = get_vocab_size(X_train)
     
     tokenizer = Tokenizer(vocab_size) 
     tokenizer.fit_on_texts(X_train)
@@ -120,6 +120,8 @@ def preprocess():
     write2file(y_train, 'y_train.pkl')
     write2file(y_test, 'y_test.pkl')
 
+    return X_train, X_test, y_train, y_test
+
 def load2var(filepath):
     with open(filepath, 'rb') as f:
         data = pickle.load(f)
@@ -138,6 +140,7 @@ if(os.path.isfile(fname1) and os.path.isfile(fname2)):
 else:
     # 데이터 사전처리
     preprocess()
+    X_train, X_test, y_train, y_test = preprocess()
 
 # max_depth = 3, 학습률은 0.1, 예제가 이진분류이므로 목적함수(objective)는 binary:logistic(이진 로지스틱)
 # 부스팅 반복횟수는 400
