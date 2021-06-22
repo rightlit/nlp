@@ -73,7 +73,7 @@ def preprocess():
     X_train = []
     total_len = len(train_data['document'])
     cnt = 0
-    print('train_data : stopwords eliminating ==========')
+    print('train_data : document words tokenizing ==========')
     for sentence in train_data['document']:
         temp_X = okt.morphs(sentence, stem=True) # 토큰화
         temp_X = [word for word in temp_X if not word in stopwords] # 불용어 제거
@@ -85,7 +85,7 @@ def preprocess():
     X_test = []
     total_len = len(test_data['document'])
     cnt = 0
-    print('test_data : stopwords eliminating ==========')
+    print('test_data : document words tokenizing ==========')
     for sentence in test_data['document']:
         temp_X = okt.morphs(sentence, stem=True) # 토큰화
         temp_X = [word for word in temp_X if not word in stopwords] # 불용어 제거
