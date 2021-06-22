@@ -127,8 +127,10 @@ def load2var(filepath):
         return data
 
 # NSMC dataset download
+print('NSMC dataset downloading...')
 urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_train.txt", filename="ratings_train.txt")
 urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_test.txt", filename="ratings_test.txt")   
+print('download completed')
 
 fname1 = 'X_train.pkl'
 fname2 = 'X_test.pkl'
