@@ -120,7 +120,7 @@ def preprocess():
     write2file(y_train, 'y_train.pkl')
     write2file(y_test, 'y_test.pkl')
 
-    return X_train, X_test, y_train, y_test
+    return X_train, X_test, y_train, y_test, vocab_size
 
 def load2var(filepath):
     with open(filepath, 'rb') as f:
@@ -137,10 +137,10 @@ if(os.path.isfile(fname1) and os.path.isfile(fname2)):
     X_test = load2var('X_test.pkl')
     y_train = load2var('y_train.pkl')
     y_test = load2var('y_test.pkl')
+    vocab_size = 19416
 else:
     # 데이터 사전처리
-    preprocess()
-    X_train, X_test, y_train, y_test = preprocess()
+    X_train, X_test, y_train, y_test, vocab_size = preprocess()
 
 # max_depth = 3, 학습률은 0.1, 예제가 이진분류이므로 목적함수(objective)는 binary:logistic(이진 로지스틱)
 # 부스팅 반복횟수는 400

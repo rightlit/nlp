@@ -120,7 +120,7 @@ def preprocess():
     write2file(y_train, 'y_train.pkl')
     write2file(y_test, 'y_test.pkl')
 
-    return X_train, X_test, y_train, y_test
+    return X_train, X_test, y_train, y_test, vocab_size
 
 def load2var(filepath):
     with open(filepath, 'rb') as f:
@@ -139,10 +139,8 @@ if(os.path.isfile(fname1) and os.path.isfile(fname2)):
     y_test = load2var('y_test.pkl')
     vocab_size = 19416
 else:
-    vocab_size = None
     # 데이터 사전처리
-    preprocess()
-    X_train, X_test, y_train, y_test = preprocess()
+    X_train, X_test, y_train, y_test, vocab_size = preprocess()
 
 model = Sequential()
 model.add(Embedding(vocab_size, 256))
