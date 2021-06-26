@@ -31,6 +31,7 @@ X_test = load2var('X_test.pkl')
 y_train = load2var('y_train.pkl')
 y_test = load2var('y_test.pkl')
 
+print('loading xgboost model...')
 xgb_wrapper = load2var('best_xgboost_model.pkl')
 w_preds = xgb_wrapper.predict(X_test)
 # 예측 결과 확인
