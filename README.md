@@ -18,12 +18,15 @@
 1. RNN 알고리즘을 이용한 분류 
     - 모델 훈련 : [01_xgboost_train.py](https://github.com/rightlit/nlp/blob/main/examples/01_xgboost_train.py)
     - 모델 평가 : [01_xgboost_eval.py](https://github.com/rightlit/nlp/blob/main/examples/01_xgboost_eval.py)
+    - 모델 시험 : [01_xgboost_test.py](https://github.com/rightlit/nlp/blob/main/examples/01_xgboost_test.py)
 2. RNN 알고리즘을 이용한 분류 
     - 모델 훈련 : [02_lstm_train.py](https://github.com/rightlit/nlp/blob/main/examples/02_lstm_train.py)
     - 모델 평가 : [02_lstm_eval.py](https://github.com/rightlit/nlp/blob/main/examples/02_lstm_eval.py)
+    - 모델 시험 : [02_lstm_test.py](https://github.com/rightlit/nlp/blob/main/examples/02_lstm_test.py)
 3. CNN 알고리즘을 이용한 분류 
     - 모델 훈련 : [03_cnn_train.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_train.py)
     - 모델 평가 : [03_cnn_eval.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_eval.py)
+    - 모델 시험 : [03_cnn_test.py](https://github.com/rightlit/nlp/blob/main/examples/03_cnn_test.py)
 4. 사전훈련된 Word2Vec 을 이용한 분류
     - 모델 훈련 : [04_cnn_word2vec_train.py](https://github.com/rightlit/nlp/blob/main/examples/04_cnn_word2vec_train.py)
     - 모델 평가 : [04_cnn_word2vec_eval.py](https://github.com/rightlit/nlp/blob/main/examples/04_cnn_word2vec_eval.py)
