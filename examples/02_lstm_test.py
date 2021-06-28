@@ -23,6 +23,7 @@ def sentiment_predict(sentence):
     print("{} : {:.2f}% 확률로 부정 리뷰입니다.\n".format(sentence, (1 - score) * 100))
 
 #vocab_size = 19416
+max_len = 30
 tokenizer = load2var('tokenizer_nsmc.pkl')
 okt = Okt()
 stopwords = ['의','가','이','은','들','는','좀','잘','걍','과','도','를','으로','자','에','와','한','하다']
