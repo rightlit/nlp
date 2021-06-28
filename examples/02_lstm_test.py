@@ -24,9 +24,15 @@ def sentiment_predict(sentence):
 
 #vocab_size = 19416
 max_len = 30
-tokenizer = load2var('tokenizer_nsmc.pkl')
 okt = Okt()
 stopwords = ['의','가','이','은','들','는','좀','잘','걍','과','도','를','으로','자','에','와','한','하다']
+
+
+print('loading tokenizer...')
+tokenizer = load2var('tokenizer_nsmc.pkl')
+
+print('loading LSTM model...')
+loaded_model = load_model('best_model.h5')
 
 # input your words
 input_data = ['이 영화 개꿀잼 ㅋㅋㅋ', 
