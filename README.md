@@ -34,6 +34,6 @@
 5. 직접훈련한 Word2Vec 을 이용한 분류
     - 모델 훈련 : [05_cnn_word2vec_train.py](https://github.com/rightlit/nlp/blob/main/examples/05_cnn_word2vec_train.py)
     - 모델 평가 : [05_cnn_word2vec_eval.py](https://github.com/rightlit/nlp/blob/main/examples/05_cnn_word2vec_eval.py)
-6. LSTM 알고리즘을 이용한 분류 
+6. Attention 적용 알고리즘을 이용한 분류 
     - 모델 훈련 : [06_lstm_attention_train.py](https://github.com/rightlit/nlp/blob/main/examples/06_lstm_attention_train.py)
     - 모델 평가 : [06_lstm_attention_eval.py](https://github.com/rightlit/nlp/blob/main/examples/06_lstm_attention_eval.py)
