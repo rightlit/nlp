@@ -10,7 +10,7 @@
     - 1D CNN으로 IMDB 리뷰 분류하기 : [https://wikidocs.net/80783](https://wikidocs.net/80783) <br>
     - [Chapter 4. 분류] XGBoost(eXtraGradient Boost) : [https://injo.tistory.com/44](https://injo.tistory.com/44) <br>
     - 사전 훈련된 워드 임베딩을 이용한 의도 분류(Intent Classification using Pre-trained Word Embedding) : [https://wikidocs.net/86083](https://wikidocs.net/86083) <br>
-    - 영어/한국어 Word2Vec 실습) : [https://wikidocs.net/50739](https://wikidocs.net/50739) <br>
+    - 영어/한국어 Word2Vec 실습 : [https://wikidocs.net/50739](https://wikidocs.net/50739) <br>
     - 양방향 LSTM과 어텐션 메커니즘(BiLSTM with Attention mechanism) : [https://wikidocs.net/48920](https://wikidocs.net/48920) <br>
 
 예제는 아래와 같이 구성되어 있습니다.
