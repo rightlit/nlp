@@ -11,6 +11,7 @@
     - [Chapter 4. 분류] XGBoost(eXtraGradient Boost) : [https://injo.tistory.com/44](https://injo.tistory.com/44) <br>
     - 사전 훈련된 워드 임베딩을 이용한 의도 분류(Intent Classification using Pre-trained Word Embedding) : [https://wikidocs.net/86083](https://wikidocs.net/86083) <br>
     - 영어/한국어 Word2Vec 실습) : [https://wikidocs.net/50739](https://wikidocs.net/50739) <br>
+    - 양방향 LSTM과 어텐션 메커니즘(BiLSTM with Attention mechanism) : [https://wikidocs.net/48920](https://wikidocs.net/48920) <br>
 
 예제는 아래와 같이 구성되어 있습니다.
 
@@ -33,4 +34,6 @@
 5. 직접훈련한 Word2Vec 을 이용한 분류
     - 모델 훈련 : [05_cnn_word2vec_train.py](https://github.com/rightlit/nlp/blob/main/examples/05_cnn_word2vec_train.py)
     - 모델 평가 : [05_cnn_word2vec_eval.py](https://github.com/rightlit/nlp/blob/main/examples/05_cnn_word2vec_eval.py)
-
+6. LSTM 알고리즘을 이용한 분류 
+    - 모델 훈련 : [06_lstm_attention_train.py](https://github.com/rightlit/nlp/blob/main/examples/06_lstm_attention_train.py)
+    - 모델 평가 : [06_lstm_attention_eval.py](https://github.com/rightlit/nlp/blob/main/examples/06_lstm_attention_eval.py)
