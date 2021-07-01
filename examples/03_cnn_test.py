@@ -35,7 +35,12 @@ print('loading CNN model...')
 loaded_model = load_model('best_cnn_model.h5')
 
 # input your words
-input_data = ['이 영화 개꿀잼 ㅋㅋㅋ', 
+input_data = ['영화 짱 재밌어요!',
+              '완전 재미없어요 ㅠ',
+              '완전 비추입니다 ㅎㅎ',
+              '대박 최고 영화에요!',
+              '배우들 연기잘하고 감동적임다',
+              '이 영화 개꿀잼 ㅋㅋㅋ', 
               '이 영화 핵노잼 ㅠㅠ', 
               '이딴게 영화냐 ㅉㅉ', 
               '감독 뭐하는 놈이냐?', 
